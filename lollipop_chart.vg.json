@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data" : {"url" : "https://raw.githubusercontent.com/xlin0041/3179/main/Worldwide%20Vaccine%20Data.csv"},
+    "layer" : [
+      {
+        "description" : "Lollipop Stick",
+        "mark" : {
+          "type" : "bar",
+          "width" : 10
+        },
+        "encoding": {
+          "x" : {
+            "field" : "Country",
+            "type" : "ordinal"
+           },
+          "y" : {
+            "field" : "Total doses administered",
+            "type" : "quantitative"
+          },
+          "color" : { 
+            "field" : "Country" ,
+            "legend" : null
+          }
+        }
+      },
+      {
+        "description": "Lollipop",
+        "mark" : {
+          "type" : "point",
+          "tooltip" : true,
+          "filled": true,
+          "size" : 500
+        },
+        "encoding": {
+          "x" : {
+            "field" : "Country",
+            "type" : "ordinal"
+           },
+          "y" : {
+            "field" : "Total doses administered",
+            "type" : "quantitative"
+          },
+          "color" : { 
+            "field" : "Country" 
+          }
+        }
+      }
+    ]
+  }
