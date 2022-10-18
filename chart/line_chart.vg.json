@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data" : {"url" : "https://raw.githubusercontent.com/xlin0041/3179/main/Worldwide%20Vaccine%20Data.csv"},
+    "data" : {"url" : "https://raw.githubusercontent.com/xlin0041/FIT3179/main/data/Worldwide%20Vaccine%20Data.csv"},
     "mark" : {
       "type" : "line",
       "point" : {
