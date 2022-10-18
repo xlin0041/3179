@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data" : {"url" : "https://raw.githubusercontent.com/xlin0041/3179/main/Worldwide%20Vaccine%20Data.csv"},
+    "mark" : {
+      "type" : "line",
+      "point" : {
+        "filled" : false,
+        "tooltip" : true,
+        "fill" : "white"
+      }
+    },
+    "height" : 400,
+    "width" : 500,
+    "encoding":{
+      "x" : {"field" : "Country", "type" : "ordinal"},
+      "y" : {"field" : "Doses administered per 100 people", "type" : "quantitative"}
+    }
+  }
