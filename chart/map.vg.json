@@ -6,7 +6,7 @@
     "title": "Percentage of Population Fully Vaccinated",
     "projection": {"type": "equalEarth"},
     "data" : {
-      "url" : "https://raw.githubusercontent.com/xlin0041/3179/main/ne_110m_admin_0_countries.topojson",
+      "url" : "https://raw.githubusercontent.com/xlin0041/FIT3179/main/chart/ne_110m.json",
       "format" : {
         "type": "topojson",
         "feature": "ne_110m_admin_0_countries"
@@ -17,7 +17,7 @@
         "lookup": "properties.NAME",
         "from" : {
           "data" : {
-            "url" : "https://raw.githubusercontent.com/xlin0041/3179/main/Worldwide%20Vaccine%20Data%20Over%20Countries.csv"
+            "url" : "https://raw.githubusercontent.com/xlin0041/FIT3179/main/data/Worldwide%20Vaccine%20Data%20Over%20Countries.csv"
           },
           "key": "Country",
           "fields": ["% of population fully vaccinated"]
